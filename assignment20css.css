@@ -1,0 +1,112 @@
+/* Grid System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  
+  .col {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .col-1 { flex: 0 0 8.33333%; max-width: 8.33333%; }
+  .col-2 { flex: 0 0 16.66667%; max-width: 16.66667%; }
+  .col-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-4 { flex: 0 0 33.33333%; max-width: 33.33333%; }
+  .col-5 { flex: 0 0 41.66667%; max-width: 41.66667%; }
+  .col-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-7 { flex: 0 0 58.33333%; max-width: 58.33333%; }
+  .col-8 { flex: 0 0 66.66667%; max-width: 66.66667%; }
+  .col-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-10 { flex: 0 0 83.33333%; max-width: 83.33333%; }
+  .col-11 { flex: 0 0 91.66667%; max-width: 91.66667%; }
+  .col-12 { flex: 0 0 100%; max-width: 100%; }
+  /* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Forms */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Utilities */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .margin-top-10 {
+    margin-top: 10px;
+  }
+  
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Utilities */
+  @media (max-width: 768px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,
+    .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10,
+    .col-sm-11, .col-sm-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  

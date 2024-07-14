@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Positioning Techniques</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    
+    .box {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        margin: 10px;
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size: 18px;
+    }
+
+    /* Different positioning examples */
+    .static {
+        position: static;
+    }
+    
+    .relative {
+        position: relative;
+    }
+    
+    .absolute {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+    
+    .fixed {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .sticky {
+        position: sticky;
+        top: 0;
+        background-color: #333;
+        color: white;
+        z-index: 1000; /* Ensures it stays on top of other elements */
+    }
+    
+    /* Additional styles for sticky */
+    .content {
+        height: 1200px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CSS Positioning Techniques</h1>
+    
+    <div class="box static">Static Positioning</div>
+    <div class="box relative">Relative Positioning</div>
+    <div class="box absolute">Absolute Positioning</div>
+    <div class="box fixed">Fixed Positioning</div>
+    
+    <div class="content">
+        <h2>Scroll Down to See Sticky Positioning</h2>
+        <div class="box sticky">Sticky Positioning</div>
+    </div>
+</div>
+
+</body>
+</html>

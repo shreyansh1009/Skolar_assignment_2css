@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Variables Demo</title>
+<style>
+  /* Define CSS variables for colors, font sizes, and spacing */
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --text-color: #333;
+    --font-size-normal: 16px;
+    --font-size-large: 20px;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: var(--spacing-medium);
+    color: var(--text-color);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-medium);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-medium);
+  }
+
+  p {
+    font-size: var(--font-size-normal);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .button {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: var(--font-size-normal);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #c0392b;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>CSS Variables Demo</h1>
+  <p>This webpage demonstrates the use of CSS variables for consistent styling and ease of maintenance.</p>
+  <button class="button">Learn More</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.flex-container {
+    display: flex;
+    margin-bottom: 2em;
+    background-color: #eaeaea;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.primary {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.secondary {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 200px; /* Flex grow, shrink, and basis */
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.nested-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2196F3;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nested-item {
+    background-color: #f44336;
+    margin: 5px 0;
+}

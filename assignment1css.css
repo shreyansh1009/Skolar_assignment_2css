@@ -1,0 +1,52 @@
+/* Element selector */
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+}
+
+.sub-title {
+    color: green;
+}
+
+/* ID selector */
+#main-title {
+    color: navy;
+    text-align: center;
+}
+
+#unique-paragraph {
+    color: maroon;
+    font-style: italic;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: orange;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-size: 20px;
+    font-weight: bold;
+}

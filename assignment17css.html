@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Form Elements Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .radio-label, .checkbox-label {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Interests:</label><br>
+    <input type="checkbox" id="interest1" name="interests" value="coding">
+    <label for="interest1" class="checkbox-label">Coding</label>
+    <input type="checkbox" id="interest2" name="interests" value="music">
+    <label for="interest2" class="checkbox-label">Music</label>
+    <input type="checkbox" id="interest3" name="interests" value="sports">
+    <label for="interest3" class="checkbox-label">Sports</label>
+  </div>
+  <div class="form-group">
+    <label>Subscribe to newsletter:</label><br>
+    <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+    <label for="subscribeYes" class="radio-label">Yes</label>
+    <input type="radio" id="subscribeNo" name="subscribe" value="no">
+    <label for="subscribeNo" class="radio-label">No</label>
+  </div>
+  <button type="submit">Submit</button>
+</div>
+</body>
+</html>
